@@ -14,12 +14,19 @@
   <p>The descriptions used on this page are from the lovely people <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank">@MDN</a></p>
 
   <section id="TOC">
+    <h1>TOC</h1>
     <ol>
       <li><a href="#TOC">TOC</a></li>
       <li><a href="#any-hover">any-hover</a></li>
       <li><a href="#any-pointer">any-pointer</a></li>
       <li><a href="#color-gamut">color-gamut</a></li>
       <li><a href="#forced-colors">forced-colors</a></li>
+      <li><a href="#hover">hover</a></li>
+      <li><a href="#inverted-colors">inverted-colors</a></li>
+      <li><a href="#orientation">orientation</a></li>
+      <li><a href="#overflow-block">overflow-block</a></li>
+      <li><a href="#overflow-inline">overflow-inline</a></li>
+      <li><a href="#pointer">pointer</a></li>
     </ol>
   </section>
 
@@ -44,6 +51,8 @@
         </tr>
       </tbody>
     </table>
+    <h2>Notes</h2>
+    <p>Good support.</p>
   </section>
   <section id="any-pointer">
     <h1>any-pointer</h1>
@@ -70,6 +79,8 @@
         </tr>
       </tbody>
     </table>
+    <h2>Notes</h2>
+    <p>Good support.</p>
   </section>
   <section id="color-gamut">
     <h1>color-gamut</h1>
@@ -96,6 +107,8 @@
         </tr>
       </tbody>
     </table>
+    <h2>Notes</h2>
+    <p>No support with Firefox.</p>
   </section>
   <section id="forced-colors">
     <h1>forced-colors</h1>
@@ -118,6 +131,164 @@
         </tr>
       </tbody>
     </table>
+    <h2>Notes</h2>
+    <p>Little support.</p>
+  </section>
+  <section id="hover">
+    <h1>hover</h1>
+    <p>The hover CSS media feature can be used to test whether the user's <em>primary</em> input mechanism can hover over elements.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td id="hover-none"></td>
+        </tr>
+        <tr>
+          <td>hover</td>
+          <td id="hover-hover"></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Notes</h2>
+    <p>Good support.</p>
+  </section>
+  <section id="inverted-colors">
+    <h1>inverted-colors</h1>
+    <p>The inverted-colors CSS media feature can be used to test whether the user agent or underlying OS is inverting colors.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td id="inverted-colors-none"></td>
+        </tr>
+        <tr>
+          <td>inverted</td>
+          <td id="inverted-colors-inverted"></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Notes</h2>
+    <p>Little support.</p>
+  </section>
+  <section id="orientation">
+    <h1>orientation</h1>
+    <p>The orientation CSS media feature can be used to test the orientation of the viewport (or the page box, for paged media).</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>portrait</td>
+          <td id="orientation-portrait"></td>
+        </tr>
+        <tr>
+          <td>landscape</td>
+          <td id="orientation-landscape"></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Notes</h2>
+    <p>Great support.</p>
+  </section>
+  <section id="overflow-block">
+    <h1>overflow-block</h1>
+    <p>The overflow-block CSS media feature can be used to test how the output device handles content that overflows the initial containing block along the block axis.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td id="overflow-block-none"></td>
+        </tr>
+        <tr>
+          <td>scroll</td>
+          <td id="overflow-block-scroll"></td>
+        </tr>
+        <tr>
+          <td>optional-paged</td>
+          <td id="overflow-block-optional-paged"></td>
+        </tr>
+        <tr>
+          <td>paged</td>
+          <td id="overflow-block-paged"></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Notes</h2>
+    <p>Little support.</p>
+  </section>
+  <section id="overflow-inline">
+    <h1>overflow-block</h1>
+    <p>The overflow-inline CSS media feature can be used to test how the output device handles content that overflows the initial containing block along the inline axis.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td id="overflow-inline-none"></td>
+        </tr>
+        <tr>
+          <td>scroll</td>
+          <td id="overflow-inline-scroll"></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Notes</h2>
+    <p>Little support.</p>
+  </section>
+  <section id="pointer">
+    <h1>pointer</h1>
+    <p>The pointer CSS media feature tests whether the user has a pointing device (such as a mouse), and if so, how accurate the <em>primary</em> pointing device is.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td id="pointer-none"></td>
+        </tr>
+        <tr>
+          <td>coarse</td>
+          <td id="pointer-coarse"></td>
+        </tr>
+        <tr>
+          <td>fine</td>
+          <td id="pointer-fine"></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Notes</h2>
+    <p>Good support.</p>
   </section>
   
 </body>

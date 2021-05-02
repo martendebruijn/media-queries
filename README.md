@@ -21,10 +21,10 @@ Test CSS media queries.
 - [x] `forced-colors`
 - [ ] `grid`
 - [ ] `height`
-- [ ] `hover`
-- [ ] `inverted-colors`
+- [x] `hover`
+- [x] `inverted-colors`
 - [ ] `monochrome`
-- [ ] `orientation`
+- [x] `orientation`
 - [ ] `overflow-block`
 - [ ] `overflow-inline`
 - [ ] `pointer`

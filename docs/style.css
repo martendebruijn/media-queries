@@ -28,7 +28,22 @@ tr:nth-child(even) {
 #color-gamut-p3,
 #color-gamut-rec2020,
 #forced-colors-none,
-#forced-colors-active {
+#forced-colors-active,
+#hover-none,
+#hover-hover,
+#inverted-colors-none,
+#inverted-colors-inverted,
+#orientation-landscape,
+#orientation-portrait,
+#overflow-block-none,
+#overflow-block-scroll,
+#overflow-block-optional-paged,
+#overflow-block-paged,
+#overflow-inline-none,
+#overflow-inline-scroll,
+#pointer-none,
+#pointer-coarse,
+#pointer-fine {
   background: var(--color-failure);
 }
 #any-hover-none:before,
@@ -40,7 +55,22 @@ tr:nth-child(even) {
 #color-gamut-p3:before,
 #color-gamut-rec2020:before,
 #forced-colors-none:before,
-#forced-colors-active:before {
+#forced-colors-active:before,
+#hover-none:before,
+#hover-hover:before,
+#inverted-colors-none:before,
+#inverted-colors-inverted:before,
+#orientation-landscape:before,
+#orientation-portrait:before,
+#overflow-block-none:before,
+#overflow-block-scroll:before,
+#overflow-block-optional-paged:before,
+#overflow-block-paged:before,
+#overflow-inline-none:before,
+#overflow-inline-scroll:before,
+#pointer-none:before,
+#pointer-coarse:before,
+#pointer-fine:before {
   content: 'no';
 }
 
@@ -134,6 +164,144 @@ tr:nth-child(even) {
     background: var(--color-sucess);
   }
   #forced-colors-active:before {
+    content: 'yes';
+  }
+}
+/* ------------------------------ */
+/* hover */
+/* ------------------------------ */
+@media (hover: none) {
+  #hover-none {
+    background: var(--color-sucess);
+  }
+  #hover-none:before {
+    content: 'yes';
+  }
+}
+@media (hover: hover) {
+  #hover-hover {
+    background: var(--color-sucess);
+  }
+  #hover-hover:before {
+    content: 'yes';
+  }
+}
+/* ------------------------------ */
+/* inverted-colors */
+/* ------------------------------ */
+@media (inverted-colors: none) {
+  #inverted-colors-none {
+    background: var(--color-sucess);
+  }
+  #inverted-colors-none:before {
+    content: 'yes';
+  }
+}
+@media (inverted-colors: inverted) {
+  #inverted-colors-inverted {
+    background: var(--color-sucess);
+  }
+  #inverted-colors-inverted:before {
+    content: 'yes';
+  }
+}
+/* ------------------------------ */
+/* orientation */
+/* ------------------------------ */
+@media (orientation: portrait) {
+  #orientation-portrait {
+    background: var(--color-sucess);
+  }
+  #orientation-portrait:before {
+    content: 'yes';
+  }
+}
+@media (orientation: landscape) {
+  #orientation-landscape {
+    background: var(--color-sucess);
+  }
+  #orientation-landscape:before {
+    content: 'yes';
+  }
+}
+/* ------------------------------ */
+/* overflow-block */
+/* ------------------------------ */
+@media (overflow-block: none) {
+  #overflow-block-none {
+    background: var(--color-sucess);
+  }
+  #overflow-block-none:before {
+    content: 'yes';
+  }
+}
+@media (overflow-block: scroll) {
+  #overflow-block-scroll {
+    background: var(--color-sucess);
+  }
+  #overflow-block-scroll:before {
+    content: 'yes';
+  }
+}
+@media (overflow-block: optional-paged) {
+  #overflow-block-optional-paged {
+    background: var(--color-sucess);
+  }
+  #overflow-block-optional-paged:before {
+    content: 'yes';
+  }
+}
+@media (overflow-block: paged) {
+  #overflow-block-paged {
+    background: var(--color-sucess);
+  }
+  #overflow-block-paged:before {
+    content: 'yes';
+  }
+}
+/* ------------------------------ */
+/* overflow-inline */
+/* ------------------------------ */
+@media (overflow-inline: none) {
+  #overflow-inline-none {
+    background: var(--color-sucess);
+  }
+  #overflow-inline-none:before {
+    content: 'yes';
+  }
+}
+@media (overflow-inline: scroll) {
+  #overflow-inline-scroll {
+    background: var(--color-sucess);
+  }
+  #overflow-inline-scroll:before {
+    content: 'yes';
+  }
+}
+/* ------------------------------ */
+/* pointer */
+/* ------------------------------ */
+@media (pointer: none) {
+  #pointer-none {
+    background: var(--color-sucess);
+  }
+  #pointer-none:before {
+    content: 'yes';
+  }
+}
+@media (pointer: fine) {
+  #pointer-fine {
+    background: var(--color-sucess);
+  }
+  #pointer-fine:before {
+    content: 'yes';
+  }
+}
+@media (pointer: coarse) {
+  #pointer-coarse {
+    background: var(--color-sucess);
+  }
+  #pointer-coarse:before {
     content: 'yes';
   }
 }
