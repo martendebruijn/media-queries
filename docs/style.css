@@ -19,6 +19,9 @@ tr:nth-child(even) {
   background: lightgray;
 }
 
+#media-type-all,
+#media-type-print,
+#media-type-screen,
 #any-hover-none,
 #any-hover-hover,
 #any-pointer-none,
@@ -50,6 +53,9 @@ tr:nth-child(even) {
 #prefers-reduced-motion-reduce {
   background: var(--color-failure);
 }
+#media-type-all:before,
+#media-type-print:before,
+#media-type-screen:before,
 #any-hover-none:before,
 #any-hover-hover:before,
 #any-pointer-none:before,
@@ -82,6 +88,34 @@ tr:nth-child(even) {
   content: 'no';
 }
 
+/* media-type */
+/* ------------------------------ */
+@media all {
+  /* or: @media */
+  #media-type-all {
+    background: var(--color-sucess);
+  }
+  #media-type-all:before {
+    content: 'yes';
+  }
+}
+@media print {
+  #media-type-print {
+    background: var(--color-sucess);
+  }
+  #media-type-print:before {
+    content: 'yes';
+  }
+}
+@media screen {
+  #media-type-screen {
+    background: var(--color-sucess);
+  }
+  #media-type-screen:before {
+    content: 'yes';
+  }
+}
+/* ------------------------------ */
 /* any-hover */
 /* ------------------------------ */
 @media (any-hover: none) {
