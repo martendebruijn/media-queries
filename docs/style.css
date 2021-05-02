@@ -43,7 +43,11 @@ tr:nth-child(even) {
 #overflow-inline-scroll,
 #pointer-none,
 #pointer-coarse,
-#pointer-fine {
+#pointer-fine,
+#prefers-color-scheme-light,
+#prefers-color-scheme-dark,
+#prefers-reduced-motion-no-preference,
+#prefers-reduced-motion-reduce {
   background: var(--color-failure);
 }
 #any-hover-none:before,
@@ -70,7 +74,11 @@ tr:nth-child(even) {
 #overflow-inline-scroll:before,
 #pointer-none:before,
 #pointer-coarse:before,
-#pointer-fine:before {
+#pointer-fine:before,
+#prefers-color-scheme-light:before,
+#prefers-color-scheme-dark:before,
+#prefers-reduced-motion-no-preference:before,
+#prefers-reduced-motion-reduce:before {
   content: 'no';
 }
 
@@ -302,6 +310,44 @@ tr:nth-child(even) {
     background: var(--color-sucess);
   }
   #pointer-coarse:before {
+    content: 'yes';
+  }
+}
+/* ------------------------------ */
+/* prefers-color-scheme */
+/* ------------------------------ */
+@media (prefers-color-scheme: light) {
+  #prefers-color-scheme-light {
+    background: var(--color-sucess);
+  }
+  #prefers-color-scheme-light:before {
+    content: 'yes';
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #prefers-color-scheme-dark {
+    background: var(--color-sucess);
+  }
+  #prefers-color-scheme-dark:before {
+    content: 'yes';
+  }
+}
+/* ------------------------------ */
+/* prefers-reduced-motion */
+/* ------------------------------ */
+@media (prefers-reduced-motion: no-preference) {
+  #prefers-reduced-motion-no-preference {
+    background: var(--color-sucess);
+  }
+  #prefers-reduced-motion-no-preference:before {
+    content: 'yes';
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #prefers-reduced-motion-reduce {
+    background: var(--color-sucess);
+  }
+  #prefers-reduced-motion-reduce:before {
     content: 'yes';
   }
 }
