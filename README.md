@@ -4,10 +4,10 @@ Test CSS media queries.
 
 ## Media Types
 
-- [ ] `all`
-- [ ] `print`
-- [ ] `screen`
-- [ ] `speach`
+- [x] `all`
+- [x] `print`
+- [x] `screen`
+- [ ] `speach` (not included -> not visual)
 
 ## Media Features
 
