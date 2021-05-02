@@ -20,18 +20,36 @@
       <li><a href="#media-types">Media Types</a>
       <li><a href="#media-features">Media Features</a></li>    
         <ol>
-          <li><a href="#any-hover">any-hover</a></li>
-          <li><a href="#any-pointer">any-pointer</a></li>
-          <li><a href="#color-gamut">color-gamut</a></li>
-          <li><a href="#forced-colors">forced-colors</a></li>
-          <li><a href="#hover">hover</a></li>
-          <li><a href="#inverted-colors">inverted-colors</a></li>
-          <li><a href="#orientation">orientation</a></li>
-          <li><a href="#overflow-block">overflow-block</a></li>
-          <li><a href="#overflow-inline">overflow-inline</a></li>
-          <li><a href="#pointer">pointer</a></li>
-          <li><a href="#prefers-color-scheme">prefers-color-scheme</a></li>
-          <li><a href="#prefers-reduced-motion">prefers-reduced-motion</a></li>
+          <li>
+            <a href="#media-features-fixed">Fixed values</a>
+            <ol>
+              <li><a href="#any-hover">any-hover</a></li>
+              <li><a href="#any-pointer">any-pointer</a></li>
+              <li><a href="#color-gamut">color-gamut</a></li>
+              <li><a href="#forced-colors">forced-colors</a></li>
+              <li><a href="#hover">hover</a></li>
+              <li><a href="#inverted-colors">inverted-colors</a></li>
+              <li><a href="#orientation">orientation</a></li>
+              <li><a href="#overflow-block">overflow-block</a></li>
+              <li><a href="#overflow-inline">overflow-inline</a></li>
+              <li><a href="#pointer">pointer</a></li>
+              <li><a href="#prefers-color-scheme">prefers-color-scheme</a></li>
+              <li><a href="#prefers-reduced-motion">prefers-reduced-motion</a></li>
+              <li><a href="#grid">grid</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#media-features-range">Range values</a>
+            <ol>
+              <li><a href="#aspect-ratio">aspect-ratio</a></li>
+              <li><a href="#color">color</a></li>
+              <li><a href="#color-index">color-index</a></li>
+              <li><a href="#height">height</a></li>
+              <li><a href="#monochrome">monochrome</a></li>
+              <li><a href="#resolution">resolution</a></li>
+              <li><a href="#width">width</a></li>
+            </ol>
+          </li>
         </ol>
       </li>
     </ol>
@@ -64,318 +82,436 @@
     <h2>Notes</h2>
     <p>Media type "speech" is not included, because it's not visual.</p>
     <p>If a user prints this page it (should) change the print media type to yes (and the screen media type to no).</p>
+    <a href="#TOC">Back to TOC</a>
   </section>
 
   <section id="media-features">
     <h1>Media Features</h1>
-  
-    <section id="any-hover">
-      <h2>any-hover</h2>
-      <p>The any-hover CSS media feature can be used to test whether <em>any</em> available input mechanism can hover over elements.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Value</th>
-            <th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>none</td>
-            <td id="any-hover-none"></td>
-          </tr>
-          <tr>
-            <td>hover</td>
-            <td id="any-hover-hover"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Notes</h3>
-      <p>Good support.</p>
+
+    <section id="media-features-fixed">
+      <h2>Fixed Values</h2>
+    
+      <section id="any-hover">
+        <h3>any-hover</h3>
+        <p>The any-hover CSS media feature can be used to test whether <em>any</em> available input mechanism can hover over elements.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>none</td>
+              <td id="any-hover-none"></td>
+            </tr>
+            <tr>
+              <td>hover</td>
+              <td id="any-hover-hover"></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Notes</h4>
+        <p>Good support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="any-pointer">
+        <h3>any-pointer</h3>
+        <p>The any-pointer CSS media feature tests whether the user has <em>any</em> pointing device (such as a mouse), and if so, how accurate it is.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>none</td>
+              <td id="any-pointer-none"></td>
+            </tr>
+            <tr>
+              <td>coarse</td>
+              <td id="any-pointer-coarse"></td>
+            </tr>
+            <tr>
+              <td>fine</td>
+              <td id="any-pointer-fine"></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Notes</h4>
+        <p>Good support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="color-gamut">
+        <h3>color-gamut</h3>
+        <p>The color-gamut CSS media feature can be used to test the approximate range of colors that are supported by the user agent and the output device.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>srgb</td>
+              <td id="color-gamut-srgb"></td>
+            </tr>
+            <tr>
+              <td>p3</td>
+              <td id="color-gamut-p3"></td>
+            </tr>
+            <tr>
+              <td>rec2020</td>
+              <td id="color-gamut-rec2020"></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Notes</h4>
+        <p>No support with Firefox.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="forced-colors">
+        <h3>forced-colors</h3>
+        <p>The forced-colors CSS media feature is used to detect if the user agent has enabled a forced colors mode where it enforces a user-chosen limited color palette on the page.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>none</td>
+              <td id="forced-colors-none"></td>
+            </tr>
+            <tr>
+              <td>active</td>
+              <td id="forced-colors-active"></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Notes</h4>
+        <p>Little support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id=hover>
+        <h3>hover</h3>
+        <p>The hover CSS media feature can be used to test whether the user's <em>primary</em> input mechanism can hover over elements.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>none</td>
+              <td id="hover-none"></td>
+            </tr>
+            <tr>
+              <td>hover</td>
+              <td id="hover-hover"></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Notes</h4>
+        <p>Good support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="inverted-colors">
+        <h3>inverted-colors</h3>
+        <p>The inverted-colors CSS media feature can be used to test whether the user agent or underlying OS is inverting colors.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>none</td>
+              <td id="inverted-colors-none"></td>
+            </tr>
+            <tr>
+              <td>inverted</td>
+              <td id="inverted-colors-inverted"></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Notes</h4>
+        <p>Little support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id=orientation>
+        <h3>orientation</h3>
+        <p>The orientation CSS media feature can be used to test the orientation of the viewport (or the page box, for paged media).</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>portrait</td>
+              <td id="orientation-portrait"></td>
+            </tr>
+            <tr>
+              <td>landscape</td>
+              <td id="orientation-landscape"></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Notes</h4>
+        <p>Great support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="overflow-block">
+        <h3>overflow-block</h3>
+        <p>The overflow-block CSS media feature can be used to test how the output device handles content that overflows the initial containing block along the block axis.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>none</td>
+              <td id="overflow-block-none"></td>
+            </tr>
+            <tr>
+              <td>scroll</td>
+              <td id="overflow-block-scroll"></td>
+            </tr>
+            <tr>
+              <td>optional-paged</td>
+              <td id="overflow-block-optional-paged"></td>
+            </tr>
+            <tr>
+              <td>paged</td>
+              <td id="overflow-block-paged"></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Notes</h4>
+        <p>Little support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="overflow-inline">
+        <h3>overflow-block</h3>
+        <p>The overflow-inline CSS media feature can be used to test how the output device handles content that overflows the initial containing block along the inline axis.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>none</td>
+              <td id="overflow-inline-none"></td>
+            </tr>
+            <tr>
+              <td>scroll</td>
+              <td id="overflow-inline-scroll"></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Notes</h4>
+        <p>Little support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id=pointer>
+        <h3>pointer</h3>
+        <p>The pointer CSS media feature tests whether the user has a pointing device (such as a mouse), and if so, how accurate the <em>primary</em> pointing device is.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>none</td>
+              <td id="pointer-none"></td>
+            </tr>
+            <tr>
+              <td>coarse</td>
+              <td id="pointer-coarse"></td>
+            </tr>
+            <tr>
+              <td>fine</td>
+              <td id="pointer-fine"></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Notes</h4>
+        <p>Good support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="prefers-color-scheme">
+        <h3>prefers-color-scheme</h3>
+        <p>The prefers-color-scheme CSS media feature is used to detect if the user has requested a light or dark color theme. The user might indicate this preference through an operating system setting (e.g. light or dark mode) or a user agent setting.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>light</td>
+              <td id="prefers-color-scheme-light"></td>
+            </tr>
+            <tr>
+              <td>dark</td>
+              <td id="prefers-color-scheme-dark"></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Notes</h4>
+        <p>Good support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="prefers-reduced-motion">
+        <h3>prefers-reduced-motion</h3>
+        <p>The prefers-reduced-motion CSS media feature is used to detect if the user has requested that the system minimize the amount of non-essential motion it uses.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>no-preference</td>
+              <td id="prefers-reduced-motion-no-preference"></td>
+            </tr>
+            <tr>
+              <td>reduce</td>
+              <td id="prefers-reduced-motion-reduce"></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Notes</h4>
+        <p>Good support</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="grid">
+        <h3>grid</h3>
+        <p>The grid CSS media feature can be used to test whether the output device uses a grid-based screen.
+          Most modern computers and smartphones have bitmap-based screens. Examples of grid-based devices include text-only terminals and basic phones with only one fixed font.</p>
+          <ul>
+            <li>(grid: 0)</li>
+            <li>(grid: 1)</li>
+          </ul>
+        <h4>Notes</h4>
+        <p>Great support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
     </section>
-    <section id="any-pointer">
-      <h2>any-pointer</h2>
-      <p>The any-pointer CSS media feature tests whether the user has <em>any</em> pointing device (such as a mouse), and if so, how accurate it is.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Value</th>
-            <th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>none</td>
-            <td id="any-pointer-none"></td>
-          </tr>
-          <tr>
-            <td>coarse</td>
-            <td id="any-pointer-coarse"></td>
-          </tr>
-          <tr>
-            <td>fine</td>
-            <td id="any-pointer-fine"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Notes</h3>
-      <p>Good support.</p>
-    </section>
-    <section id="color-gamut">
-      <h2>color-gamut</h2>
-      <p>The color-gamut CSS media feature can be used to test the approximate range of colors that are supported by the user agent and the output device.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Value</th>
-            <th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>srgb</td>
-            <td id="color-gamut-srgb"></td>
-          </tr>
-          <tr>
-            <td>p3</td>
-            <td id="color-gamut-p3"></td>
-          </tr>
-          <tr>
-            <td>rec2020</td>
-            <td id="color-gamut-rec2020"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Notes</h3>
-      <p>No support with Firefox.</p>
-    </section>
-    <section id="forced-colors">
-      <h2>forced-colors</h2>
-      <p>The forced-colors CSS media feature is used to detect if the user agent has enabled a forced colors mode where it enforces a user-chosen limited color palette on the page.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Value</th>
-            <th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>none</td>
-            <td id="forced-colors-none"></td>
-          </tr>
-          <tr>
-            <td>active</td>
-            <td id="forced-colors-active"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Notes</h3>
-      <p>Little support.</p>
-    </section>
-    <section id=hover>
-      <h2>hover</h2>
-      <p>The hover CSS media feature can be used to test whether the user's <em>primary</em> input mechanism can hover over elements.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Value</th>
-            <th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>none</td>
-            <td id="hover-none"></td>
-          </tr>
-          <tr>
-            <td>hover</td>
-            <td id="hover-hover"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Notes</h3>
-      <p>Good support.</p>
-    </section>
-    <section id="inverted-colors">
-      <h2>inverted-colors</h2>
-      <p>The inverted-colors CSS media feature can be used to test whether the user agent or underlying OS is inverting colors.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Value</th>
-            <th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>none</td>
-            <td id="inverted-colors-none"></td>
-          </tr>
-          <tr>
-            <td>inverted</td>
-            <td id="inverted-colors-inverted"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Notes</h3>
-      <p>Little support.</p>
-    </section>
-    <section id=orientation>
-      <h2>orientation</h2>
-      <p>The orientation CSS media feature can be used to test the orientation of the viewport (or the page box, for paged media).</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Value</th>
-            <th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>portrait</td>
-            <td id="orientation-portrait"></td>
-          </tr>
-          <tr>
-            <td>landscape</td>
-            <td id="orientation-landscape"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Notes</h3>
-      <p>Great support.</p>
-    </section>
-    <section id="overflow-block">
-      <h2>overflow-block</h2>
-      <p>The overflow-block CSS media feature can be used to test how the output device handles content that overflows the initial containing block along the block axis.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Value</th>
-            <th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>none</td>
-            <td id="overflow-block-none"></td>
-          </tr>
-          <tr>
-            <td>scroll</td>
-            <td id="overflow-block-scroll"></td>
-          </tr>
-          <tr>
-            <td>optional-paged</td>
-            <td id="overflow-block-optional-paged"></td>
-          </tr>
-          <tr>
-            <td>paged</td>
-            <td id="overflow-block-paged"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Notes</h3>
-      <p>Little support.</p>
-    </section>
-    <section id="overflow-inline">
-      <h2>overflow-block</h2>
-      <p>The overflow-inline CSS media feature can be used to test how the output device handles content that overflows the initial containing block along the inline axis.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Value</th>
-            <th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>none</td>
-            <td id="overflow-inline-none"></td>
-          </tr>
-          <tr>
-            <td>scroll</td>
-            <td id="overflow-inline-scroll"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Notes</h3>
-      <p>Little support.</p>
-    </section>
-    <section id=pointer>
-      <h2>pointer</h2>
-      <p>The pointer CSS media feature tests whether the user has a pointing device (such as a mouse), and if so, how accurate the <em>primary</em> pointing device is.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Value</th>
-            <th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>none</td>
-            <td id="pointer-none"></td>
-          </tr>
-          <tr>
-            <td>coarse</td>
-            <td id="pointer-coarse"></td>
-          </tr>
-          <tr>
-            <td>fine</td>
-            <td id="pointer-fine"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Notes</h3>
-      <p>Good support.</p>
-    </section>
-    <section id="prefers-color-scheme">
-      <h2>prefers-color-scheme</h2>
-      <p>The prefers-color-scheme CSS media feature is used to detect if the user has requested a light or dark color theme. The user might indicate this preference through an operating system setting (e.g. light or dark mode) or a user agent setting.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Value</th>
-            <th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>light</td>
-            <td id="prefers-color-scheme-light"></td>
-          </tr>
-          <tr>
-            <td>dark</td>
-            <td id="prefers-color-scheme-dark"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Notes</h3>
-      <p>Good support.</p>
-    </section>
-    <section id="prefers-reduced-motion">
-      <h2>prefers-reduced-motion</h2>
-      <p>The prefers-reduced-motion CSS media feature is used to detect if the user has requested that the system minimize the amount of non-essential motion it uses.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Value</th>
-            <th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>no-preference</td>
-            <td id="prefers-reduced-motion-no-preference"></td>
-          </tr>
-          <tr>
-            <td>reduce</td>
-            <td id="prefers-reduced-motion-reduce"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Notes</h3>
-      <p>Good support</p>
+    <section id="media-features-range">
+      <h2>Range values</h2>
+
+      <section id="aspect-ratio">
+        <h3>aspect-ratio</h3>
+        <p>The aspect-ratio CSS media feature can be used to test the aspect ratio of the viewport.</p>
+        <ul>
+          <li>min-aspect-ratio</li>
+          <li>aspect-ratio</li>
+          <li>max-aspect-ratio</li>
+        </ul>
+        <h4>Notes</h4>
+        <p>Good support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="color">
+        <h3>color</h3>
+        <p>The color CSS media feature can be used to test the number of bits per color component (red, green, blue) of the output device.</p>
+        <ul>
+          <li>min-color</li>
+          <li>color</li>
+          <li>max-color</li>
+        </ul>
+        <h4>Notes</h4>
+        <p>Good support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="color-index">
+        <h3>color-index</h3>
+        <p>The color-index CSS media feature can be used to test the number of entries in the output device's color lookup table.</p>
+        <ul>
+          <li>min-color-index</li>
+          <li>color-index</li>
+          <li>max-color-index</li>
+        </ul>
+        <h4>Notes</h4>
+        <p>No support on Firefox (and IE).</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="height">
+        <h3>height</h3>
+        <p>desc</p>
+        <ul>
+          <li>min-height</li>
+          <li>height</li>
+          <li>max-height</li>
+        </ul>
+        <h4>Notes</h4>
+        <p>Great support.</p>
+        <p>Use "em" instead of "px" to accomodate for users who change their font-size.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="monochrome">
+        <h3>monochrome</h3>
+        <p>desc</p>
+        <ul>
+          <li>min-monochrome</li>
+          <li>monochrome</li>
+          <li>max-monochrome</li>
+        </ul>
+        <h4>Notes</h4>
+        <p>Good support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="resolution">
+        <h3>resolution</h3>
+        <p>The resolution CSS media feature can be used to test the pixel density of the output device.</p>
+        <ul>
+          <li>min-resolution</li>
+          <li>resolution</li>
+          <li>max-resolution</li>
+        </ul>
+        <h4>Notes</h4>
+        <p>Good support except Safari.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
+      <section id="width">
+        <h3>width</h3>
+        <p>The width CSS media feature can be used to test the width of the viewport (or the page box, for paged media).</p>
+        <ul>
+          <li>min-width</li>
+          <li>width</li>
+          <li>max-width</li>
+        </ul>
+        <h4>Notes</h4>
+        <p>Great support.</p>
+        <a href="#TOC">Back to TOC</a>
+      </section>
     </section>
   </section>
 </body>

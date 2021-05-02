@@ -13,17 +13,17 @@ Test CSS media queries.
 
 - [x] `any-hover`
 - [x] `any-pointer`
-- [ ] `aspect-ratio`
-- [ ] `color`
+- [x] `aspect-ratio`
+- [x] `color`
 - [x] `color-gamut`
-- [ ] `color-index`
+- [x] `color-index`
 - [ ] `display-mode`
 - [x] `forced-colors`
-- [ ] `grid`
-- [ ] `height`
+- [x] `grid`
+- [x] `height`
 - [x] `hover`
 - [x] `inverted-colors`
-- [ ] `monochrome`
+- [x] `monochrome`
 - [x] `orientation`
 - [x] `overflow-block`
 - [x] `overflow-inline`
@@ -32,11 +32,18 @@ Test CSS media queries.
 - [x] `prefers-contrast` (not included -> no support, experimental)
 - [x] `prefers-reduced-motion`
 - [x] `prefers-reduced-transparency` (not included -> no support, experimental)
-- [ ] `resolution`
+- [x] `resolution`
 - [x] `scan` (not included -> no support)
 - [x] `scripting` (not included -> no support)
 - [x] `update` (not included -> no support)
-- [ ] `width`
+- [x] `width`
+
+## Logical Operators
+
+- [ ] `and`
+- [ ] `not`
+- [ ] `only`
+- [ ] `,`
 
 ## Sources
 
