@@ -11,11 +11,15 @@
 <body>
   <h1>Test CSS Media Queries</h1>
   <p><b>Note</b>: that this page doesn't (yet) take into consideration if a query is not supported.</p>
+  <p>The descriptions used on this page are from the lovely people <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank">@MDN</a></p>
 
   <section id="TOC">
     <ol>
       <li><a href="#TOC">TOC</a></li>
       <li><a href="#any-hover">any-hover</a></li>
+      <li><a href="#any-pointer">any-pointer</a></li>
+      <li><a href="#color-gamut">color-gamut</a></li>
+      <li><a href="#forced-colors">forced-colors</a></li>
     </ol>
   </section>
 
@@ -37,6 +41,80 @@
         <tr>
           <td>hover</td>
           <td id="any-hover-hover"></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="any-pointer">
+    <h1>any-pointer</h1>
+    <p>The any-pointer CSS media feature tests whether the user has <em>any</em> pointing device (such as a mouse), and if so, how accurate it is.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td id="any-pointer-none"></td>
+        </tr>
+        <tr>
+          <td>coarse</td>
+          <td id="any-pointer-coarse"></td>
+        </tr>
+        <tr>
+          <td>fine</td>
+          <td id="any-pointer-fine"></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="color-gamut">
+    <h1>color-gamut</h1>
+    <p>The color-gamut CSS media feature can be used to test the approximate range of colors that are supported by the user agent and the output device.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>srgb</td>
+          <td id="color-gamut-srgb"></td>
+        </tr>
+        <tr>
+          <td>p3</td>
+          <td id="color-gamut-p3"></td>
+        </tr>
+        <tr>
+          <td>rec2020</td>
+          <td id="color-gamut-rec2020"></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="forced-colors">
+    <h1>forced-colors</h1>
+    <p>The forced-colors CSS media feature is used to detect if the user agent has enabled a forced colors mode where it enforces a user-chosen limited color palette on the page.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td id="forced-colors-none"></td>
+        </tr>
+        <tr>
+          <td>active</td>
+          <td id="forced-colors-active"></td>
         </tr>
       </tbody>
     </table>

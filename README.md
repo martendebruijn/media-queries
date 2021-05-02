@@ -11,14 +11,14 @@ Test CSS media queries.
 
 ## Media Features
 
-- [ ] `any-hover`
-- [ ] `any-pointer`
+- [x] `any-hover`
+- [x] `any-pointer`
 - [ ] `aspect-ratio`
 - [ ] `color`
-- [ ] `color-gamut`
+- [x] `color-gamut`
 - [ ] `color-index`
 - [ ] `display-mode`
-- [ ] `forced-colors`
+- [x] `forced-colors`
 - [ ] `grid`
 - [ ] `height`
 - [ ] `hover`

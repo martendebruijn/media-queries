@@ -20,17 +20,38 @@ tr:nth-child(even) {
 }
 
 #any-hover-none,
-#any-hover-hover {
+#any-hover-hover,
+#any-pointer-none,
+#any-pointer-coarse,
+#any-pointer-fine,
+#color-gamut-srgb,
+#color-gamut-p3,
+#color-gamut-rec2020,
+#forced-colors-none,
+#forced-colors-active {
   background: var(--color-failure);
 }
 #any-hover-none:before,
-#any-hover-hover:before {
+#any-hover-hover:before,
+#any-pointer-none:before,
+#any-pointer-coarse:before,
+#any-pointer-fine:before,
+#color-gamut-srgb:before,
+#color-gamut-p3:before,
+#color-gamut-rec2020:before,
+#forced-colors-none:before,
+#forced-colors-active:before {
   content: 'no';
 }
 
+/* any-hover */
+/* ------------------------------ */
 @media (any-hover: none) {
   #any-hover-none {
     background: var(--color-sucess);
+  }
+  #any-hover-none:before {
+    content: 'yes';
   }
 }
 @media (any-hover: hover) {
@@ -41,3 +62,79 @@ tr:nth-child(even) {
     content: 'yes';
   }
 }
+/* ------------------------------ */
+
+/* any-pointer */
+/* ------------------------------ */
+@media (any-pointer: none) {
+  #any-pointer-none {
+    background: var(--color-sucess);
+  }
+  #any-pointer-none:before {
+    content: 'yes';
+  }
+}
+@media (any-pointer: coarse) {
+  #any-pointer-coarse {
+    background: var(--color-sucess);
+  }
+  #any-pointer-coarse:before {
+    content: 'yes';
+  }
+}
+@media (any-pointer: fine) {
+  #any-pointer-fine {
+    background: var(--color-sucess);
+  }
+  #any-pointer-fine:before {
+    content: 'yes';
+  }
+}
+/* ------------------------------ */
+
+/* color-gamut */
+/* ------------------------------ */
+@media (color-gamut: srgb) {
+  #color-gamut-srgb {
+    background: var(--color-sucess);
+  }
+  #color-gamut-srgb:before {
+    content: 'yes';
+  }
+}
+@media (color-gamut: p3) {
+  #color-gamut-p3 {
+    background: var(--color-sucess);
+  }
+  #color-gamut-p3:before {
+    content: 'yes';
+  }
+}
+@media (color-gamut: rec2020) {
+  #color-gamut-rec2020 {
+    background: var(--color-sucess);
+  }
+  #color-gamut-rec2020:before {
+    content: 'yes';
+  }
+}
+/* ------------------------------ */
+/* forced-colors */
+/* ------------------------------ */
+@media (forced-colors: none) {
+  #forced-colors-none {
+    background: var(--color-sucess);
+  }
+  #forced-colors-none:before {
+    content: 'yes';
+  }
+}
+@media (forced-colors: active) {
+  #forced-colors-active {
+    background: var(--color-sucess);
+  }
+  #forced-colors-active:before {
+    content: 'yes';
+  }
+}
+/* ------------------------------ */
