@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --color-sucess: lightgreen;
+  --color-failure: lightcoral;
+}
+body {
+  padding: 15px;
+}
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+th,
+tr:nth-child(even) {
+  background: lightgray;
+}
+
+#any-hover-none,
+#any-hover-hover {
+  background: var(--color-failure);
+}
+#any-hover-none:before,
+#any-hover-hover:before {
+  content: 'no';
+}
+
+@media (any-hover: none) {
+  #any-hover-none {
+    background: var(--color-sucess);
+  }
+}
+@media (any-hover: hover) {
+  #any-hover-hover {
+    background: var(--color-sucess);
+  }
+  #any-hover-hover:before {
+    content: 'yes';
+  }
+}
